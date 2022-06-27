@@ -58,11 +58,13 @@ footer a {
 	font-size: 28px;
 	color: black;
 	margin: 20px;
+	box-shadow: 20px black;
 }
 
 footer a:hover {
 	color: white;
 }
+
 
 footer p {
 	margin: 15px 0;
@@ -122,12 +124,16 @@ section h2 {
 	background-color: black;
 	border-color: #daaf47 ;
 	color: #daaf47;
+	background: linear-gradient(to right top, black,#daaf47);
+
 }
 
 
 #portadaHome button:hover {
 	color: white;
 	background-color: #daaf47;
+	transform: scale(1.1);
+
 }
 
 
@@ -135,6 +141,7 @@ section h2 {
 	font-family: 'Great Vibes', cursive;
 	font-size: 52px;
 	color: #daaf47;
+	text-shadow: 15px 15px 5px black;
 }
 
 
@@ -174,6 +181,7 @@ section h2 {
 	text-align: center;
 	border: solid 2px #daaf47;
   margin-bottom: 25px;
+  box-shadow: 5px 5px 10px #daaf47;
 }
 
 
@@ -207,7 +215,13 @@ section h2 {
   color: white;
   text-align: center;
   font-size: 15px;
+  box-shadow: 5px 5px 10px #daaf47;
   
+}
+
+
+.cardTratamiento:hover {
+	transform: scale(1.1);
 }
 
 
@@ -256,6 +270,7 @@ section h2 {
 .cardProfesionales {
 	border: solid 2px #daaf47;
   margin: 25px 9px;
+  box-shadow: 5px 5px 10px #daaf47;
 }
 
 
@@ -293,6 +308,7 @@ section h2 {
 	column-gap: 15px;
 	overflow-x: auto;
 	padding: 0px 25px;
+
 }
 
 
@@ -300,6 +316,11 @@ section h2 {
 	text-align: center;
 	border: solid 2px #daaf47;
   margin: 30px 0px;
+}
+
+
+.producto:hover {
+	transform: translateY(13px);
 }
 
 
@@ -379,11 +400,13 @@ section h2 {
 	border-color: #daaf47 ;
 	color: #daaf47;
 	font-size: 18px;
+	background: linear-gradient(to right top, black,#daaf47);
 }
 
 #botonEnviar:hover {
 	color: white;
 	background-color: #daaf47;
+	transform: scale(1.1);
 }
 
 
