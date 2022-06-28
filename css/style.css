@@ -111,7 +111,6 @@ section h2 {
 	background-color: black;
 	border-color: #daaf47 ;
 	color: #daaf47;
-	background: linear-gradient(to right top, black,#daaf47);
 
 }
 
@@ -122,6 +121,7 @@ section h2 {
 	transform: scale(1.1);
 
 }
+
 
 
 .portadas h1 {
@@ -387,7 +387,6 @@ section h2 {
 	border-color: #daaf47 ;
 	color: #daaf47;
 	font-size: 18px;
-	background: linear-gradient(to right top, black,#daaf47);
 }
 
 #botonEnviar:hover {
