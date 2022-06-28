@@ -5,33 +5,44 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Elysium Estética</title>
 	<link rel="icon" href="./images/logo.ico">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<header>
-		<a href="index.html">
-		<img id="logo" src="./images/logo.png" alt="logo"/>
-		</a>
-		<nav>
-			<ul>
-				<li class="activo">Home</li>
-				<li>
-					<a href="tratamientos.html">Tratamientos</a>
-				</li>
-				<li>
-					<a href="quienes-somos.html">Quiénes Somos</a>
-				</li>
-				<li>
-					<a href="productos.html">Productos</a>
-				</li>
-				<li>
-					<a href="contacto.html">Contacto</a>
-				</li>
-			</ul>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		  <div class="container-fluid">
+		    <a class="navbar-brand" href="index.html">
+      		<img src="./images/logo.png" alt="logo" height="80">
+    		</a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarNav">
+		      <ul class="navbar-nav">
+		        <li class="nav-item">
+		          <a class="nav-link active" aria-current="page">Home</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="tratamientos.html">Tratamientos</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="quienes-somos.html">Quiénes Somos</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="productos.html">Productos</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="contacto.html">Contacto</a>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
 		</nav>
 	</header>
+	
 	<main>
 		<section id="portadaHome">
 			<h1>Bienvenidos a Elysium</h1>
@@ -92,5 +103,6 @@
 		<p>Copyright 2022 | Creado por <span class="palabraResaltada">Giuliana Migliorisi</span></p>
 		
 	</footer>
+	<script src="js/bootstrap.js"></script>
 </body>
 </html>
