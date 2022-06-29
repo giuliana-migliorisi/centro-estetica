@@ -5,31 +5,41 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Elysium Estética</title>
 	<link rel="icon" href="./images/logo.ico">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<header>
-		<a href="index.html">
-		<img id="logo" src="./images/logo.png" alt="logo"/>
-		</a>
-		<nav>
-			<ul>
-				<li>
-					<a href="index.html">Home</a>
-				</li>
-				<li>
-					<a href="tratamientos.html">Tratamientos</a>
-				</li>
-				<li class="activo">Quiénes Somos</li>
-				<li>
-					<a href="productos.html">Productos</a>
-				</li>
-				<li>
-					<a href="contacto.html">Contacto</a>
-				</li>
-			</ul>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		  <div class="container-fluid">
+		    <a class="navbar-brand" href="index.html">
+      		<img src="./images/logo.png" alt="logo" height="80">
+    		</a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarNav">
+		      <ul class="navbar-nav">
+		        <li class="nav-item">
+		          <a class="nav-link" href="index.html">Home</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="tratamientos.html">Tratamientos</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link active" aria-current="page">Quiénes Somos</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="productos.html">Productos</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="contacto.html">Contacto</a>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
 		</nav>
 	</header>
 
@@ -43,32 +53,38 @@
 		<section id="nuestroStaff">
 			<h2>Nuestro Staff</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-		 	<div class="contenedor-grid-profesionales">
-			 	<div class="cardProfesionales">
-			 		<img src="./images/profesional-1.jpg" alt="imagen del profesional 1" />
-					<h3>Nombre del profesional 1</h3>
-			 	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-			 	</div>
 
-			 	<div class="cardProfesionales">
-					<img src="./images/profesional-2.jpg" alt="imagen del profesional 2" />
-					<h3>Nombre del profesional 2</h3>
-			 	   	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-			 	</div>
 
-			 	<div class="cardProfesionales">
-					<img src="./images/profesional-3.jpg" alt="imagen del profesional 3" />
-					<h3>Nombre del profesional 3</h3>
-			 	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-			 	</div>
-			  		
-			  	<div class="cardProfesionales">
-					<img src="./images/profesional-4.jpg" alt="imagen del profesional 4" />
-					<h3>Nombre del profesional 4</h3>
-			 	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-			 	</div>
-		 	</div>	
-
+			<div class="card-group">
+			  <div class="card">
+			    <img src="./images/profesional-1.jpg" class="card-img-top" alt="imagen del profesional 1">
+			    <div class="card-body">
+			      <h5 class="card-title">Nombre del profesional 1</h5>
+			      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <img src="./images/profesional-2.jpg" class="card-img-top" alt="imagen del profesional 2">
+			    <div class="card-body">
+			      <h5 class="card-title">Nombre del profesional 2</h5>
+			      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <img src="./images/profesional-3.jpg" class="card-img-top" alt="imagen del profesional 3">
+			    <div class="card-body">
+			      <h5 class="card-title">Nombre del profesional 3</h5>
+			      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <img src="./images/profesional-4.jpg" class="card-img-top" alt="imagen del profesional 4">
+			    <div class="card-body">
+			      <h5 class="card-title">Nombre del profesional 4</h5>
+			      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			    </div>
+			  </div>
+			</div>	
 
 		</section>
 
@@ -91,5 +107,6 @@
 		<p>Copyright 2022 | Creado por <span class="palabraResaltada">Giuliana Migliorisi</span></p>
 		
 	</footer>
+	<script src="js/bootstrap.js"></script>
 </body>
 </html>
