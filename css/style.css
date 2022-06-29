@@ -25,12 +25,7 @@ a {
 }
 
 
-a:hover{
-	color: #daaf47;
-}
-
-
-header nav ul li.activo {
+.navbar-nav .nav-link.active {
 	color: #daaf47;
 }
 
@@ -157,25 +152,21 @@ section h2 {
 }
 
 
-#testimonios img {
-	height: 120px;
-	width: 120px;
-	margin: 15px;
-}
-
-
-.testimonio {
+.card {
+	background-color: black;
 	text-align: center;
 	border: solid 2px #daaf47;
-  margin-bottom: 25px;
   box-shadow: 5px 5px 10px #daaf47;
 }
 
 
-.testimonio p {
-	font-size: 15px;
-	width: 85%;
-	margin: 15px auto;
+.card img {
+	height: 50%;
+}
+
+
+.card:hover {
+	transform: translateY(13px);
 }
 
 
@@ -254,29 +245,6 @@ section h2 {
 }
 
 
-.cardProfesionales {
-	border: solid 2px #daaf47;
-  margin: 25px 9px;
-  box-shadow: 5px 5px 10px #daaf47;
-}
-
-
-.cardProfesionales img {
-  height: 250px;
-  width: 200px;
-  margin-top: 20px;
-}
-
-.cardProfesionales h3 {
-	margin-top: 15px;
-
-}
-
-.cardProfesionales p {
-  margin: 20px;
-
-}
-
 
 /* Estilo de página Productos */
 
@@ -288,45 +256,19 @@ section h2 {
 }
 
 
-.contenedor-grid-productos {
+.contenedorProductos {
 	background-color: black;
-	display: grid;
-	grid-auto-flow: column;
-	column-gap: 15px;
-	overflow-x: auto;
-	padding: 0px 25px;
+	padding: 25px;
 
 }
 
 
-.producto {
-	text-align: center;
-	border: solid 2px #daaf47;
+.card-body {
   margin: 30px 0px;
+  color: white;
 }
 
 
-.producto:hover {
-	transform: translateY(13px);
-}
-
-
-.producto img {
-	height: 250px;
-}
-
-
-.producto p {
-	margin: 20px;
-	color: white;
-	font-size: 15px;
-}
-
-
-.producto h3 {
-	margin-top: 10px;
-	color: #daaf47;
-}
 
 
 /* Estilo de página Contacto */
@@ -362,17 +304,12 @@ section h2 {
 
 #formulario {
 	margin: 45px;
+
 }
 
 
 #formulario input {
 	height: 40px;
-}
-
-
-
-#formulario textarea {
-	width: 60%;
 }
 
 
@@ -386,8 +323,6 @@ section h2 {
 	border-color: #daaf47 ;
 	color: #daaf47;
 	font-size: 18px;
-	display: flex;
-  align-self: flex-start;
   margin-top: 25px;
 }
 
@@ -454,14 +389,6 @@ section h2 {
 	}
 
 
-	.contenedor-grid-testimonios {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		column-gap: 10px;
-
-	}
-
-
 
 	/* Tratamientos */
 
@@ -484,14 +411,6 @@ section h2 {
 
 	#portadaQuienesSomos {
 		height: 85vh;
-
-	}
-
-
-	.contenedor-grid-profesionales {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-	  overflow-x: auto;
 
 	}
 
@@ -535,6 +454,11 @@ section h2 {
 
 
 
+	#formulario textarea {
+		width: 70%;
+	}
+
+
 	#datosDeContacto {
 		grid-area: contacto;
 
@@ -552,6 +476,11 @@ section h2 {
 
 	}
 
+
+	#botonEnviar {
+		display: flex;
+	  align-self: flex-start;
+	}
 
 }
 
@@ -580,18 +509,6 @@ section h2 {
 	}
 
 
-	.contenedor-grid-profesionales {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-
-	}
-
-	.cardProfesionales {
-		margin: 25px 9px;
-
-	}
-
-
 	/* Productos */
 
 	#portadaProductos {
@@ -599,20 +516,6 @@ section h2 {
 
 	}
 
-
-	.contenedor-grid-productos {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 20px;
-    padding: 40px;
-		grid-auto-flow: unset;
-	}
-
-
-	.producto {
-		margin: 0px;
-
-	}
 
 }
 
