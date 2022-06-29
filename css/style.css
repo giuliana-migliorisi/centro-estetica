@@ -341,7 +341,6 @@ section h2 {
 
 #contenedorContacto {
 	background-color: black;
-	color: white;
 	text-align: center;
 	padding: 35px 0;
 
@@ -357,28 +356,28 @@ section h2 {
 
 #datosDeContacto p {
 	margin-bottom: 10px;
+	color: white;
 }
 
 
 #formulario {
-	margin-top: 45px;
+	margin: 45px;
 }
 
 
 #formulario input {
-	height: 28px;
+	height: 40px;
 }
 
-
-.campoContacto {
-	margin: 15px 0;
-	font-size: 15px;
-
-}
 
 
 #formulario textarea {
 	width: 60%;
+}
+
+
+.form-floating>label {
+	padding: 0rem 0.75rem;
 }
 
 
@@ -387,6 +386,9 @@ section h2 {
 	border-color: #daaf47 ;
 	color: #daaf47;
 	font-size: 18px;
+	display: flex;
+  align-self: flex-start;
+  margin-top: 25px;
 }
 
 #botonEnviar:hover {
@@ -541,7 +543,7 @@ section h2 {
 
 
 	#formulario input {
-		width: 40%;
+		width: 70%;
 	}
 
 

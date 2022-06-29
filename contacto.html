@@ -55,27 +55,27 @@
 		
 		<form id="formulario">
 
-			<div class="campoContacto">
-				<label>Nombre y Apellido</label>
-				<input type="text" placeholder="Juan Perez" value="" required>
-			</div>
+		<div class="form-floating mb-3">
+		  <input type="email" class="form-control" id="floatingInput" placeholder="Juan Perez">
+		  <label for="floatingInput">Nombre y Apellido</label>
+		</div>
+		
+		<div class="form-floating mb-3">
+		  <input type="email" class="form-control" id="floatingInput" placeholder="11 4444 5555">
+		  <label for="floatingInput">Número de Teléfono</label>
+		</div>
 
-			<div class="campoContacto">
-				<label>Correo Electrónico</label>
-				<input type="email" placeholder="juan_perez@info.com" value="" required>
-			</div>
+		<div class="form-floating mb-3">
+		  <input type="email" class="form-control" id="floatingInput" placeholder="nombre@ejemplo.com">
+		  <label for="floatingInput">Email</label>
+		</div>
 
-			<div class="campoContacto">
-				<label>Teléfono</label>
-				<input type="password" placeholder="11 4444-5555" value="" required>
-			</div>
-
-			<div class="campoContacto">
-				<textarea rows="10" placeholder="Deja tu comentario"></textarea>
-			</div>
+		<div class="form-floating">
+		  <textarea class="form-control" placeholder="Dejanos tu consulta" id="floatingTextarea2" style="height: 150px"></textarea>
+		  <label for="floatingTextarea2">Dejanos tu consulta</label>
+		</div>
 
 			<button type="submit" class="btn btn-outline-primary shadow-none" id="botonEnviar">Enviar</button>
-
 
 		</form>
 
