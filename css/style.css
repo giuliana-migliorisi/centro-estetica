@@ -2,61 +2,68 @@
 
 
 * {
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
-	font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
 
 header {
-	color: white;
-	font-size: 14px;
+  color: white;
+  font-size: 14px;
 }
 
 .navbar.navbar-dark.bg-dark {
-	background-color: black !important;
+  background-color: black !important;
 }
 
+
+.navbar-brand {
+  padding-left: 12px;
+}
+
+
 a {
-	text-decoration: none;
-	color: white;
+  text-decoration: none;
+  color: white;
 }
 
 
 .navbar-nav .nav-link.active {
-	color: #daaf47;
+  color: #daaf47;
 }
 
 
 footer {
-	background-color: #daaf47;
-	text-align: center;
-	padding: 10px;
+  background-color: #daaf47;
+  text-align: center;
+  padding: 10px;
 }
 
 footer a {
-	font-size: 28px;
-	color: black;
-	margin: 20px;
-	box-shadow: 20px black;
+  font-size: 28px;
+  color: black;
+  margin: 20px;
+  box-shadow: 20px black;
 }
 
 footer a:hover {
-	color: white;
+  color: white;
 }
 
 
 footer p {
-	margin: 15px 0;
-	font-size: 14px;
+  margin: 15px 0;
+  font-size: 14px;
 }
 
 
 .palabraResaltada {
-	font-weight: 700;
+  font-weight: 700;
 }
+
 
 
 /* Estilo de página Index */
@@ -71,8 +78,8 @@ footer p {
 
 
 section {
-		padding: 50px 25px;
-		text-align: center;
+  padding: 50px 25px;
+  text-align: center;
 
 }
 
@@ -86,89 +93,89 @@ section h2 {
 
 
 #portadaHome h1 {
-	font-family: 'Great Vibes', cursive;
-	font-size: 65px;
-	color: #daaf47;
+  font-family: 'Great Vibes', cursive;
+  font-size: 65px;
+  color: #daaf47;
 }
 
 
 #portadaHome p {
-	padding-top: 30px;
-	padding-bottom: 70px;
-	font-size: 15px;
-	
+  padding-top: 30px;
+  padding-bottom: 70px;
+  font-size: 15px;
+  
 }
 
 
 #portadaHome button {
   padding: 10px 15px;
-	font-size: 18px;
-	background-color: black;
-	border-color: #daaf47 ;
-	color: #daaf47;
+  font-size: 18px;
+  background-color: black;
+  border-color: #daaf47 ;
+  color: #daaf47;
 
 }
 
 
 #portadaHome button:hover {
-	color: white;
-	background-color: #daaf47;
-	transform: scale(1.1);
+  color: white;
+  background-color: #daaf47;
+  transform: scale(1.1);
 
 }
 
 
 
 .portadas h1 {
-	font-family: 'Great Vibes', cursive;
-	font-size: 52px;
-	color: #daaf47;
-	text-shadow: 15px 15px 5px black;
+  font-family: 'Great Vibes', cursive;
+  font-size: 52px;
+  color: #daaf47;
+  text-shadow: 15px 15px 5px black;
 }
 
 
 .portadas p {
-	padding-top: 40px;
-	color: white;
-	font-size: 15px;
+  padding-top: 40px;
+  color: white;
+  font-size: 15px;
 }
 
 
 #filosofia {
-	background-color: #daaf47;
+  background-color: #daaf47;
 }
 
 
 #filosofia p {
-	margin-bottom: 30px;
-	font-size: 15px;
+  margin-bottom: 30px;
+  font-size: 15px;
 
 }
 
 
 #testimonios {
-	background-color: black;
-	color: white;
+  background-color: black;
+}
+
+#testimonios h2 {
+  color: #daaf47;
 }
 
 
 .card {
-	background-color: black;
-	text-align: center;
-	border: solid 2px #daaf47;
-  box-shadow: 5px 5px 10px #daaf47;
+  background-color: #daaf47;
+  margin-bottom: 30px;
 }
 
 
-.card img {
-	height: 50%;
+.card p {
+  color: black;
 }
 
-
-.card:hover {
-	transform: translateY(13px);
+.card-img-top {
+  height: 30vh;
+  object-fit: cover;
 }
-
 
 
 /* Estilo de página Tratamientos */
@@ -181,13 +188,13 @@ section h2 {
 
 
 #contenedorTratamientos {
-	background-color: black;
-	padding: 25px;
+  background-color: black;
+  padding: 25px;
 }
 
 
 .cardTratamiento {
-	border: solid 3px #daaf47;
+  border: solid 3px #daaf47;
   margin: 20px auto;
   padding: 20px;
   color: white;
@@ -199,23 +206,22 @@ section h2 {
 
 
 .cardTratamiento:hover {
-	transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 
 .cardTratamiento h2 {
-	color: #daaf47;
-	margin-bottom: 10px;
+  color: #daaf47;
+  margin-bottom: 10px;
 
 }
 
 
 .cardTratamiento img {
-	height: 120px;
-	margin-top: 15px;
+  height: 120px;
+  margin-top: 15px;
 
 }
-
 
 
 /* Estilo de página Quiénes Somos */
@@ -228,22 +234,21 @@ section h2 {
 }
 
 #nuestroStaff {
-	background-color: black;
-	color: white;
-	text-align: center;
-	font-size: 15px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 15px;
 }
 
 #nuestroStaff h2 {
-	color: #daaf47;
-	font-size: 35px;
+  color: #daaf47;
+  font-size: 35px;
 }
 
 
 #nuestroStaff p {
-	margin-bottom: 45px;
+  margin-bottom: 45px;
 }
-
 
 
 /* Estilo de página Productos */
@@ -257,8 +262,8 @@ section h2 {
 
 
 .contenedorProductos {
-	background-color: black;
-	padding: 25px;
+  background-color: black;
+  padding: 25px;
 
 }
 
@@ -267,8 +272,6 @@ section h2 {
   margin: 30px 0px;
   color: white;
 }
-
-
 
 
 /* Estilo de página Contacto */
@@ -282,208 +285,143 @@ section h2 {
 
 
 #contenedorContacto {
-	background-color: black;
-	text-align: center;
-	padding: 35px 0;
-
-}
-
-
-#datosDeContacto h3 {
-	color: #daaf47;
-	margin: 20px 0;
-
-}
-
-
-#datosDeContacto p {
-	margin-bottom: 10px;
-	color: white;
+  background-color: black;
 }
 
 
 #formulario {
-	margin: 45px;
+  margin-top: 35px;
 
 }
 
 
 #formulario input {
-	height: 40px;
+  height: 40px;
 }
 
 
 .form-floating>label {
-	padding: 0rem 0.75rem;
+  padding: 0rem 0.75rem;
+}
+
+
+.form-control:focus {
+  border-color: #daaf47;
 }
 
 
 #botonEnviar {
-	background-color: black;
-	border-color: #daaf47 ;
-	color: #daaf47;
-	font-size: 18px;
+  background-color: black;
+  border-color: #daaf47 ;
+  color: #daaf47;
+  font-size: 18px;
   margin-top: 25px;
 }
 
 #botonEnviar:hover {
-	color: white;
-	background-color: #daaf47;
-	transform: scale(1.1);
+  color: white;
+  background-color: #daaf47;
+  transform: scale(1.1);
 }
 
 
-/* RESPONSIVE Tablet (min-width 760px) */
+#datosDeContacto h3 {
+  color: #daaf47;
+  margin: 20px 0;
 
-@media (min-width: 760px) {
-	section {
-		padding: 80px 40px;
-
-	}
+}
 
 
-	.portadas p {
-		width: 60%;
+#datosDeContacto p {
+  margin-bottom: 10px;
+  color: white;
+}
+
+
+/* RESPONSIVE Tablet */
+
+@media (min-width: 768px) {
+  section {
+    padding: 80px 40px;
+
+  }
+
+
+  .portadas p {
+    width: 60%;
     margin: 0 auto;
-	}
+  }
 
 
-	.portadas h1 {
-		font-size: 11vh;
-	}
+  .portadas h1 {
+    font-size: 11vh;
+  }
 
 
-	/* Index */
+  /* Index */
 
-	#portadaHome {
-	  height: calc(100vh - 10vh);
-	  text-align: left;
+  #portadaHome {
+    height: calc(100vh - 10vh);
+    text-align: left;
 
-	}
-
-
-	#portadaHome h1 {
-		font-size: 11vh;
-	}
+  }
 
 
-	#portadaHome p {
-		width: 40%;
-		padding-bottom: 15vh;
-	
-	}
+  #portadaHome h1 {
+    font-size: 11vh;
+  }
 
 
-	#filosofia p {
-		width: 45%;
-		margin-bottom: 0px;
-
-	}
-
-
-	#contenedorFilosofia {
-		display: flex;
-		justify-content: space-between;
-		text-align: left;
-
-	}
+  #portadaHome p {
+    width: 40%;
+    padding-bottom: 15vh;
+  
+  }
 
 
+  .card {
+    height: 627px;
 
-	/* Tratamientos */
+  }
 
-	#portadaTratamientos {
-		height: 85vh;
-	 
-	}
+
+  /* Tratamientos */
+
+  #portadaTratamientos {
+    height: 85vh;
+   
+  }
 
 
 
-	.cardTratamiento {
-		width: 85%;
-		display: flex;
-		text-align: left;
+  .cardTratamiento {
+    width: 85%;
+    display: flex;
+    text-align: left;
 
-	}
-
-
-	/* Quienes Somos */
-
-	#portadaQuienesSomos {
-		height: 85vh;
-
-	}
+  }
 
 
-	.cardProfesionales {
-		margin: 12px 6px;
-	}
+  
+  /* Quienes Somos */
+
+  #portadaQuienesSomos {
+    height: 85vh;
+
+  }
 
 
+  /* Contacto */
 
-		/* Contacto */
-
-	#portadaContacto {
-		height: 85vh;
-	}
-
-
-	.contenedor-grid-contacto {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-areas:
-		"mapa form"
-		"contacto form";
-
-	}
+  #portadaContacto {
+    height: 85vh;
+  }
 
 
-	#mapa {
-		grid-area: mapa;
-		justify-self: center;
+  #formulario {
+    margin-top: 0px;
 
-	}
-
-
-	#formulario {
-		grid-area: form;
-		grid-column: 2;
-		margin: 0px;
-
-	}
-
-
-
-	#formulario textarea {
-		width: 70%;
-	}
-
-
-	#datosDeContacto {
-		grid-area: contacto;
-
-
-	}
-
-
-	#formulario input {
-		width: 70%;
-	}
-
-
-	#formulario textarea {
-		height: 25vh;
-
-	}
-
-
-	#botonEnviar {
-		display: flex;
-	  align-self: flex-start;
-	}
-
-}
-
+  }
 
 
 /* RESPONSIVE Desktop (min-width 992px) */
@@ -491,31 +429,37 @@ section h2 {
 
 @media (min-width: 992px) {
 
-	/* Header */
-	.navbar > .container-fluid {
-		padding: 0 20px;
-	}
+  /* Header */
+  .navbar > .container-fluid {
+    padding: 0 20px;
+  }
 
-	.navbar-expand-lg .navbar-collapse {
-		justify-content: end;
-	}
-
-
-	/* Quienes Somos */
-
-	#portadaQuienesSomos {
-		height: 85vh;
-
-	}
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: end;
+  }
 
 
-	/* Productos */
+  /* Index */
 
-	#portadaProductos {
-		height: 85vh;
+  .card {
+    height: 532px;
 
-	}
+  }
+
+
+  /* Quienes Somos */
+
+  #portadaQuienesSomos {
+    height: 85vh;
+
+  }
+
+    /* Productos */
+
+  #portadaProductos {
+    height: 85vh;
+
+  }
 
 
 }
-
