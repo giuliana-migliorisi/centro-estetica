@@ -1,9 +1,3 @@
-/*
-cd
-cd Desktop/estetica-GiulianaMigliorisi/
-node-sass -w sass/ -o css/
-
-*/
 
 @import "variables";
 
@@ -70,6 +64,22 @@ footer {
 }
 
 
+/* map */
+
+$ff: (
+  primary-title: "Great Vibes",
+  secondary-title: "Montserrat"
+);
+
+
+h1 {
+ font-family: map-get($ff, "primary-title");
+}
+
+h2 {
+ font-family: map-get($ff, "secondary-title");
+}
+
 
 /* Estilo de página Index */
 
@@ -93,7 +103,6 @@ section {
   color: $primary-white;
 
   h1 {
-    font-family: 'Great Vibes', cursive;
     font-size: 65px;
     color: $primary-golden;
   }
@@ -123,7 +132,6 @@ section {
 
 .portadas {
   h1 {
-    font-family: 'Great Vibes', cursive;
     font-size: 52px;
     color: $primary-golden;
     text-shadow: 15px 15px 5px $primary-black;

@@ -1,13 +1,6 @@
 @charset "UTF-8";
-/*
-cd
-cd Desktop/estetica-GiulianaMigliorisi/
-node-sass -w sass/ -o css/
-
-*/
 h1 {
-  color: #daaf47;
-  font-family: 'Great Vibes', cursive; }
+  color: #daaf47; }
 
 * {
   margin: 0px;
@@ -50,6 +43,13 @@ footer {
 .palabraResaltada {
   font-weight: 700; }
 
+/* map */
+h1 {
+  font-family: "Great Vibes"; }
+
+h2 {
+  font-family: "Montserrat"; }
+
 /* Estilo de página Index */
 section {
   padding: 50px 25px;
@@ -64,7 +64,6 @@ section {
   background-size: cover;
   color: white; }
   #portadaHome h1 {
-    font-family: 'Great Vibes', cursive;
     font-size: 65px;
     color: #daaf47; }
   #portadaHome p {
@@ -83,7 +82,6 @@ section {
       transform: scale(1.1); }
 
 .portadas h1 {
-  font-family: 'Great Vibes', cursive;
   font-size: 52px;
   color: #daaf47;
   text-shadow: 15px 15px 5px black; }
