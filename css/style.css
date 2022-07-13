@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*
-
+cd
+cd Desktop/estetica-GiulianaMigliorisi/
 node-sass -w sass/ -o css/
 
 */
@@ -224,6 +225,8 @@ section {
     #portadaHome p {
       width: 40%;
       padding-bottom: 15vh; }
+  #filosofia p {
+    text-align: start; }
   .card {
     height: 627px; }
   /* Tratamientos */
