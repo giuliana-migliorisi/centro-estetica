@@ -1,5 +1,6 @@
 
 @import "variables";
+@import "mixins";
 
 
 * {
@@ -81,6 +82,27 @@ h2 {
 }
 
 
+/* extend */
+
+.portadaHomeButton {
+  padding: 10px 15px;
+  font-size: 18px;
+  background-color: $primary-black;
+  border-color: $primary-golden ;
+  color: $primary-golden;
+
+  &:hover {
+    color: $primary-white;
+    background-color: $primary-golden;
+    transform: scale(1.1);
+  }
+}
+
+.botonEnviar {
+  @extend .portadaHomeButton;
+  margin-top: 25px;
+}
+
 /* Estilo de página Index */
 
 
@@ -96,11 +118,9 @@ section {
   }
 }
 
-
-#portadaHome {
+.portadaHome {
   background-image: url(../images/fondo.jpeg);
   background-size: cover;
-  color: $primary-white;
 
   h1 {
     font-size: 65px;
@@ -110,22 +130,9 @@ section {
   p {
     padding-top: 30px;
     padding-bottom: 70px;
-    font-size: 15px;
+    @include parrafoBlanco;
   }
 
-  button {
-    padding: 10px 15px;
-    font-size: 18px;
-    background-color: $primary-black;
-    border-color: $primary-golden ;
-    color: $primary-golden;
-
-    &:hover {
-      color: $primary-white;
-      background-color: $primary-golden;
-      transform: scale(1.1);
-    }
-  }
 }
 
 
@@ -140,8 +147,7 @@ section {
 
   p {
     padding-top: 40px;
-    color: $primary-white;
-    font-size: 15px;
+    @include parrafoBlanco;
   }
 
 }
@@ -187,6 +193,10 @@ section {
 #portadaTratamientos {
   background-image: url(../images/tratamientos.jpg);
   background-size: cover;
+
+  p {
+    @include parrafoBlanco;
+  }
 }
 
 
@@ -303,20 +313,6 @@ section {
   border-color: $primary-golden;
 }
 
-
-#botonEnviar {
-  background-color: $primary-black;
-  border-color: $primary-golden ;
-  color: $primary-golden;
-  font-size: 18px;
-  margin-top: 25px;
-
-  &:hover {
-    color: $primary-white;
-    background-color: $primary-golden;
-    transform: scale(1.1);
-  }
-}
 
 
 #datosDeContacto {
