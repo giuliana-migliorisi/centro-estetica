@@ -1,13 +1,6 @@
 @charset "UTF-8";
-/*
-cd
-cd Desktop/estetica-GiulianaMigliorisi/
-node-sass -w sass/ -o css/
-
-*/
 h1 {
-  color: #daaf47;
-  font-family: 'Great Vibes', cursive; }
+  color: #daaf47; }
 
 * {
   margin: 0px;
@@ -50,6 +43,28 @@ footer {
 .palabraResaltada {
   font-weight: 700; }
 
+/* map */
+h1 {
+  font-family: "Great Vibes"; }
+
+h2 {
+  font-family: "Montserrat"; }
+
+/* extend */
+.portadaHomeButton, .botonEnviar {
+  padding: 10px 15px;
+  font-size: 18px;
+  background-color: black;
+  border-color: #daaf47;
+  color: #daaf47; }
+  .portadaHomeButton:hover, .botonEnviar:hover {
+    color: white;
+    background-color: #daaf47;
+    transform: scale(1.1); }
+
+.botonEnviar {
+  margin-top: 25px; }
+
 /* Estilo de página Index */
 section {
   padding: 50px 25px;
@@ -59,39 +74,27 @@ section {
     font-size: 26px;
     font-style: italic; }
 
-#portadaHome {
+.portadaHome {
   background-image: url(../images/fondo.jpeg);
-  background-size: cover;
-  color: white; }
-  #portadaHome h1 {
-    font-family: 'Great Vibes', cursive;
+  background-size: cover; }
+  .portadaHome h1 {
     font-size: 65px;
     color: #daaf47; }
-  #portadaHome p {
+  .portadaHome p {
     padding-top: 30px;
     padding-bottom: 70px;
-    font-size: 15px; }
-  #portadaHome button {
-    padding: 10px 15px;
-    font-size: 18px;
-    background-color: black;
-    border-color: #daaf47;
-    color: #daaf47; }
-    #portadaHome button:hover {
-      color: white;
-      background-color: #daaf47;
-      transform: scale(1.1); }
+    font-size: 15px;
+    color: white; }
 
 .portadas h1 {
-  font-family: 'Great Vibes', cursive;
   font-size: 52px;
   color: #daaf47;
   text-shadow: 15px 15px 5px black; }
 
 .portadas p {
   padding-top: 40px;
-  color: white;
-  font-size: 15px; }
+  font-size: 15px;
+  color: white; }
 
 #filosofia {
   background-color: #daaf47; }
@@ -118,6 +121,9 @@ section {
 #portadaTratamientos {
   background-image: url(../images/tratamientos.jpg);
   background-size: cover; }
+  #portadaTratamientos p {
+    font-size: 15px;
+    color: white; }
 
 #contenedorTratamientos {
   background-color: black;
@@ -188,17 +194,6 @@ section {
 .form-control:focus {
   border-color: #daaf47; }
 
-#botonEnviar {
-  background-color: black;
-  border-color: #daaf47;
-  color: #daaf47;
-  font-size: 18px;
-  margin-top: 25px; }
-  #botonEnviar:hover {
-    color: white;
-    background-color: #daaf47;
-    transform: scale(1.1); }
-
 #datosDeContacto h3 {
   color: #daaf47;
   margin: 20px 0; }
@@ -217,12 +212,12 @@ section {
   .portadas h1 {
     font-size: 11vh; }
   /* Index */
-  #portadaHome {
+  .portadaHome {
     height: calc(100vh - 10vh);
     text-align: left; }
-    #portadaHome h1 {
+    .portadaHome h1 {
       font-size: 11vh; }
-    #portadaHome p {
+    .portadaHome p {
       width: 40%;
       padding-bottom: 15vh; }
   #filosofia p {
