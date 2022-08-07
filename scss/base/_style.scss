@@ -38,6 +38,8 @@ footer {
   padding: 10px;
 
   ul {
+    padding-left: 0;
+
     li {
       list-style: none;
       display: inline;
@@ -333,5 +335,4 @@ section {
 
 #mapa {
   height: 280px;
-  width:  320px;
 }

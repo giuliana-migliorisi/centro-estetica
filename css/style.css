@@ -33,6 +33,8 @@ footer {
   background-color: #daaf47;
   text-align: center;
   padding: 10px; }
+  footer ul {
+    padding-left: 0; }
   footer ul li {
     list-style: none;
     display: inline; }
@@ -240,7 +242,7 @@ section {
 
 #mapa {
   height: 280px;
-  width: 320px; }
+ }
 
 /* RESPONSIVE Tablet */
 @media (min-width: 768px) {
