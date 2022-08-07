@@ -1,0 +1,337 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  color: $primary-white;
+  font-size: 14px;
+}
+
+.navbar.navbar-dark.bg-dark {
+  background-color: $primary-black !important;
+}
+
+.navbar-toggler:hover {
+  border-color: $primary-golden;
+  color: $primary-golden;
+}
+
+.navbar-brand {
+  padding-left: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-white;
+}
+
+.navbar-nav .nav-link.active {
+  color: $primary-golden;
+}
+
+footer {
+  background-color: $primary-golden;
+  text-align: center;
+  padding: 10px;
+
+  ul {
+    li {
+      list-style: none;
+      display: inline;
+
+      a {
+        font-size: 28px;
+        color: $primary-black;
+        margin: 20px;
+        box-shadow: 20px $primary-black;
+
+        &:hover {
+          color: $primary-white;
+        }
+      }
+    }
+  }
+
+  p {
+    margin: 15px 0;
+    font-size: 14px;
+  }
+}
+
+.palabra-resaltada {
+  font-weight: 700;
+}
+
+/* map */
+
+$ff: (
+  primary-title: "Great Vibes",
+  secondary-title: "Montserrat"
+);
+
+h1 {
+ font-family: map-get($ff, "primary-title");
+}
+
+h2 {
+ font-family: map-get($ff, "secondary-title");
+}
+
+/* extend */
+
+.portada-home-button {
+  padding: 10px 15px;
+  font-size: 18px;
+  background-color: $primary-black;
+  border-color: $primary-golden;
+  color: $primary-golden;
+
+  &:hover {
+    color: $primary-white;
+    background-color: $primary-golden;
+    border-color: $primary-golden;
+    transform: scale(1.1);
+  }
+}
+
+.boton-enviar {
+  @extend .portada-home-button;
+  margin-top: 25px;
+  width:  85%;
+}
+
+/* Estilo de página Index */
+
+section {
+  padding: 50px 25px;
+  text-align: center;
+
+  h2 {
+    padding-bottom: 40px;
+    font-size: 26px;
+    font-style: italic;
+  }
+}
+
+.portada-home {
+  background-image: url(../images/fondo.jpeg);
+  background-size: cover;
+
+  h1 {
+    font-size: 65px;
+    color: $primary-golden;
+  }
+
+  p {
+    padding-top: 30px;
+    padding-bottom: 70px;
+    @include parrafo-blanco;
+  }
+}
+
+.portadas {
+  h1 {
+    font-size: 52px;
+    color: $primary-golden;
+    text-shadow: 15px 15px 5px $primary-black;
+  }
+
+  p {
+    padding-top: 40px;
+    @include parrafo-blanco;
+  }
+}
+
+#filosofia {
+  background-color: $primary-golden;
+
+  p {
+    margin-bottom: 30px;
+    font-size: 15px;
+  }
+}
+
+#testimonios {
+  background-color: $primary-black;
+
+  h2 {
+    color: $primary-golden;
+  }
+}
+
+.card {
+  background-color: $primary-golden;
+  margin-bottom: 30px;
+
+  p {
+    color: $primary-black;
+    font-size: 15px;
+  }
+}
+
+.card-img-top {
+  height: 30vh;
+  object-fit: cover;
+}
+
+/* Estilo de página Tratamientos */
+
+#portada-tratamientos {
+  background-image: url(../images/tratamientos.jpg);
+  background-size: cover;
+
+  p {
+    @include parrafo-blanco;
+  }
+}
+
+#contenedor-tratamientos {
+  background-color: $primary-black;
+  padding: 25px;
+}
+
+.card-tratamiento {
+  border: solid 3px $primary-golden;
+  border-radius: 7px;
+  margin: 20px auto;
+  padding: 20px;
+  color: $primary-white;
+  text-align: center;
+  font-size: 15px;
+  box-shadow: 5px 5px 10px $primary-golden;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  h2 {
+    color: $primary-golden;
+    margin-bottom: 10px;
+  }
+
+  img {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+/* Estilo de página Quiénes Somos */
+
+#portada-quienes-somos {
+  background-image: url(../images/quienes-somos.jpg);
+  background-size: cover;
+}
+
+#nuestro-staff {
+  background-color: $primary-black;
+  color: $primary-white;
+  text-align: center;
+  font-size: 15px;
+
+  h2 {
+    color: $primary-golden;
+    font-size: 35px;
+  }
+
+  p {
+    margin: 0 auto 45px;
+    width: 80%;
+  }
+}
+
+/* Estilo de página Productos */
+
+#portada-productos {
+  background-image: url(../images/productos.jpg);
+  background-size: cover;
+}
+
+.contenedor-grid-productos {
+  background-color: black;
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 15px;
+  overflow-x: auto;
+  padding: 0px 25px;
+}
+
+.producto {
+  text-align: center;
+  border: solid 2px #daaf47;
+  border-radius: 7px;
+  margin: 30px 0px;
+
+  &:hover {
+    transform: translateY(13px);
+  }
+
+  img {
+    height: 250px;
+  }
+
+  p {
+    margin: 20px;
+    color: white;
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 25px;
+    margin-top: 10px;
+    color: #daaf47;
+  }
+}
+
+/* Estilo de página Contacto */
+
+#portada-contacto {
+  background-image: url(../images/contacto.jpg);
+  background-size: cover;
+}
+
+#contenedor-contacto {
+  background-color: $primary-black;
+}
+
+#formulario {
+  margin-top: 35px;
+  text-align: center;
+  .form-field {
+    text-align: left;
+  }
+  .form-label {
+    color: #fff;
+  }
+  input {
+    height: 40px;
+  }
+}
+
+.form-floating>label {
+  padding: 0rem 0.75rem;
+}
+
+.form-control:focus {
+  box-shadow: unset;
+  border-color: $primary-golden;
+}
+
+#datos-de-contacto {
+  h3 {
+    color: $primary-golden;
+    margin: 20px 0;
+  }
+  
+  p {
+    margin-bottom: 10px;
+    color: $primary-white;
+  }
+}
+
+#mapa {
+  height: 280px;
+  width:  320px;
+}

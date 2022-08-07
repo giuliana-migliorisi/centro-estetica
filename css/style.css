@@ -15,6 +15,10 @@ header {
 .navbar.navbar-dark.bg-dark {
   background-color: black !important; }
 
+.navbar-toggler:hover {
+  border-color: #daaf47;
+  color: #daaf47; }
+
 .navbar-brand {
   padding-left: 12px; }
 
@@ -29,18 +33,21 @@ footer {
   background-color: #daaf47;
   text-align: center;
   padding: 10px; }
-  footer a {
-    font-size: 28px;
-    color: black;
-    margin: 20px;
-    box-shadow: 20px black; }
-    footer a:hover {
-      color: white; }
+  footer ul li {
+    list-style: none;
+    display: inline; }
+    footer ul li a {
+      font-size: 28px;
+      color: black;
+      margin: 20px;
+      box-shadow: 20px black; }
+      footer ul li a:hover {
+        color: white; }
   footer p {
     margin: 15px 0;
     font-size: 14px; }
 
-.palabraResaltada {
+.palabra-resaltada {
   font-weight: 700; }
 
 /* map */
@@ -51,19 +58,21 @@ h2 {
   font-family: "Montserrat"; }
 
 /* extend */
-.portadaHomeButton, .botonEnviar {
+.portada-home-button, .boton-enviar {
   padding: 10px 15px;
   font-size: 18px;
   background-color: black;
   border-color: #daaf47;
   color: #daaf47; }
-  .portadaHomeButton:hover, .botonEnviar:hover {
+  .portada-home-button:hover, .boton-enviar:hover {
     color: white;
     background-color: #daaf47;
+    border-color: #daaf47;
     transform: scale(1.1); }
 
-.botonEnviar {
-  margin-top: 25px; }
+.boton-enviar {
+  margin-top: 25px;
+  width: 85%; }
 
 /* Estilo de página Index */
 section {
@@ -74,13 +83,13 @@ section {
     font-size: 26px;
     font-style: italic; }
 
-.portadaHome {
+.portada-home {
   background-image: url(../images/fondo.jpeg);
   background-size: cover; }
-  .portadaHome h1 {
+  .portada-home h1 {
     font-size: 65px;
     color: #daaf47; }
-  .portadaHome p {
+  .portada-home p {
     padding-top: 30px;
     padding-bottom: 70px;
     font-size: 15px;
@@ -111,80 +120,106 @@ section {
   background-color: #daaf47;
   margin-bottom: 30px; }
   .card p {
-    color: black; }
+    color: black;
+    font-size: 15px; }
 
 .card-img-top {
   height: 30vh;
   object-fit: cover; }
 
 /* Estilo de página Tratamientos */
-#portadaTratamientos {
+#portada-tratamientos {
   background-image: url(../images/tratamientos.jpg);
   background-size: cover; }
-  #portadaTratamientos p {
+  #portada-tratamientos p {
     font-size: 15px;
     color: white; }
 
-#contenedorTratamientos {
+#contenedor-tratamientos {
   background-color: black;
   padding: 25px; }
 
-.cardTratamiento {
+.card-tratamiento {
   border: solid 3px #daaf47;
+  border-radius: 7px;
   margin: 20px auto;
   padding: 20px;
   color: white;
   text-align: center;
   font-size: 15px;
   box-shadow: 5px 5px 10px #daaf47; }
-  .cardTratamiento:hover {
+  .card-tratamiento:hover {
     transform: scale(1.1); }
-  .cardTratamiento h2 {
+  .card-tratamiento h2 {
     color: #daaf47;
     margin-bottom: 10px; }
-  .cardTratamiento img {
-    height: 120px;
-    margin-top: 15px; }
+  .card-tratamiento img {
+    width: 100%;
+    height: 250px; }
 
 /* Estilo de página Quiénes Somos */
-#portadaQuienesSomos {
+#portada-quienes-somos {
   background-image: url(../images/quienes-somos.jpg);
   background-size: cover; }
 
-#nuestroStaff {
+#nuestro-staff {
   background-color: black;
   color: white;
   text-align: center;
   font-size: 15px; }
-  #nuestroStaff h2 {
+  #nuestro-staff h2 {
     color: #daaf47;
     font-size: 35px; }
-  #nuestroStaff p {
-    margin-bottom: 45px; }
+  #nuestro-staff p {
+    margin: 0 auto 45px;
+    width: 80%; }
 
 /* Estilo de página Productos */
-#portadaProductos {
+#portada-productos {
   background-image: url(../images/productos.jpg);
   background-size: cover; }
 
-.contenedorProductos {
+.contenedor-grid-productos {
   background-color: black;
-  padding: 25px; }
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 15px;
+  overflow-x: auto;
+  padding: 0px 25px; }
 
-.card-body {
-  margin: 30px 0px;
-  color: white; }
+.producto {
+  text-align: center;
+  border: solid 2px #daaf47;
+  border-radius: 7px;
+  margin: 30px 0px; }
+  .producto:hover {
+    transform: translateY(13px); }
+  .producto img {
+    height: 250px; }
+  .producto p {
+    margin: 20px;
+    color: white;
+    font-size: 15px; }
+  .producto h2 {
+    font-size: 25px;
+    margin-top: 10px;
+    color: #daaf47; }
 
 /* Estilo de página Contacto */
-#portadaContacto {
+#portada-contacto {
   background-image: url(../images/contacto.jpg);
   background-size: cover; }
 
-#contenedorContacto {
+#contenedor-contacto {
   background-color: black; }
 
 #formulario {
-  margin-top: 35px; }
+  margin-top: 35px;
+  text-align: center; }
+  #formulario .form-field {
+    text-align: left; }
+  #formulario .form-label {
+    color: #fff; }
   #formulario input {
     height: 40px; }
 
@@ -192,15 +227,20 @@ section {
   padding: 0rem 0.75rem; }
 
 .form-control:focus {
+  box-shadow: unset;
   border-color: #daaf47; }
 
-#datosDeContacto h3 {
+#datos-de-contacto h3 {
   color: #daaf47;
   margin: 20px 0; }
 
-#datosDeContacto p {
+#datos-de-contacto p {
   margin-bottom: 10px;
   color: white; }
+
+#mapa {
+  height: 280px;
+  width: 320px; }
 
 /* RESPONSIVE Tablet */
 @media (min-width: 768px) {
@@ -212,33 +252,45 @@ section {
   .portadas h1 {
     font-size: 11vh; }
   /* Index */
-  .portadaHome {
+  .portada-home {
     height: calc(100vh - 10vh);
     text-align: left; }
-    .portadaHome h1 {
+    .portada-home h1 {
       font-size: 11vh; }
-    .portadaHome p {
+    .portada-home p {
       width: 40%;
       padding-bottom: 15vh; }
   #filosofia p {
     text-align: start; }
   .card {
-    height: 627px; }
+    height: 80vh; }
+    .card p {
+      padding-top: 20px; }
+  .card-title {
+    padding-top: 20px; }
   /* Tratamientos */
-  #portadaTratamientos {
+  #portada-tratamientos {
     height: 85vh; }
-  .cardTratamiento {
+  .card-tratamiento {
     width: 85%;
     display: flex;
     text-align: left; }
+    .card-tratamiento p {
+      margin-right: 20px; }
+    .card-tratamiento img {
+      width: 35%;
+      height: 200px; }
   /* Quienes Somos */
-  #portadaQuienesSomos {
+  #portada-quienes-somos {
     height: 85vh; }
   /* Contacto */
-  #portadaContacto {
+  #portada-contacto {
     height: 85vh; }
   #formulario {
-    margin-top: 0px; } }
+    margin-top: 0px;
+    text-align: left; }
+  .boton-enviar {
+    width: 30%; } }
 
 /* RESPONSIVE Desktop (min-width 992px) */
 @media (min-width: 992px) {
@@ -247,12 +299,33 @@ section {
     padding: 0 20px; }
   .navbar-expand-lg .navbar-collapse {
     justify-content: end; }
-  /* Index */
   .card {
-    height: 532px; }
+    height: 65vh; }
+  /* Tratamientos */
+  .card-tratamiento h2 {
+    margin-top: 30px; }
+  .card-tratamiento p {
+    margin-top: 10px; }
   /* Quienes Somos */
-  #portadaQuienesSomos {
+  #portada-quienes-somos {
     height: 85vh; }
+  .card p {
+    padding-top: 0; }
   /* Productos */
-  #portadaProductos {
-    height: 85vh; } }
+  #portada-productos {
+    height: 85vh; }
+  .contenedor-grid-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+    grid-auto-flow: unset; }
+  .producto {
+    margin: 0px; }
+    .producto img {
+      height: 350px;
+      width: 100%; }
+  /* Contacto */
+  #mapa {
+    height: 380px;
+    width: 420px; } }

@@ -3,9 +3,7 @@
 @media (min-width: 768px) {
   section {
     padding: 80px 40px;
-
   }
-
 
   .portadas {
 
@@ -14,87 +12,87 @@
       margin: 0 auto;
     }
 
-
     h1 {
       font-size: 11vh;
     }
-
   }
 
   /* Index */
 
-  .portadaHome {
+  .portada-home {
     height: calc(100vh - 10vh);
     text-align: left;
-
 
     h1 {
       font-size: 11vh;
     }
 
-
     p {
       width: 40%;
       padding-bottom: 15vh;
-    
     }
-
   } 
-
 
   #filosofia p {
     text-align: start;
     }
     
+  .card {
+    height: 80vh;
 
-    .card {
-      height: 627px;
-
+    p {
+      padding-top: 20px;
     }
+  }
 
+  .card-title {
+    padding-top: 20px;
+  }
 
   /* Tratamientos */
 
-  #portadaTratamientos {
+  #portada-tratamientos {
     height: 85vh;
-   
   }
 
-
-
-  .cardTratamiento {
+  .card-tratamiento {
     width: 85%;
     display: flex;
     text-align: left;
 
+    p {
+      margin-right: 20px;
+    }
+
+    img {
+      width: 35%;
+      height: 200px;
+    }
   }
 
-
-  
   /* Quienes Somos */
 
-  #portadaQuienesSomos {
+  #portada-quienes-somos {
     height: 85vh;
-
   }
-
 
   /* Contacto */
-
-  #portadaContacto {
+  
+  #portada-contacto {
     height: 85vh;
   }
-
 
   #formulario {
     margin-top: 0px;
+    text-align: left;
+  }
 
+  .boton-enviar {
+    width:  30%;
   }
 }
 
-
 /* RESPONSIVE Desktop (min-width 992px) */
-
 
 @media (min-width: 992px) {
 
@@ -107,27 +105,59 @@
     justify-content: end;
   }
 
-
-  /* Index */
-
   .card {
-    height: 532px;
-
+    height: 65vh;
   }
 
+  /* Tratamientos */
+
+    .card-tratamiento {
+      h2 {
+        margin-top: 30px;
+      }
+
+      p {
+        margin-top: 10px;
+      }
+    }
 
   /* Quienes Somos */
 
-  #portadaQuienesSomos {
+  #portada-quienes-somos {
     height: 85vh;
+  }
 
+  .card p {
+    padding-top: 0;
   }
 
   /* Productos */
 
-  #portadaProductos {
+  #portada-productos {
     height: 85vh;
-
   }
 
+  .contenedor-grid-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+    grid-auto-flow: unset;
+  }
+
+  .producto {
+    margin: 0px;
+
+    img {
+      height: 350px;
+      width: 100%;
+    }
+  }
+
+  /* Contacto */
+
+  #mapa {
+    height: 380px;
+    width:  420px;
+  }
 }
